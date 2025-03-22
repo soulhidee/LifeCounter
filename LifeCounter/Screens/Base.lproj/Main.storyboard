@@ -44,6 +44,9 @@
                                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="ieR-yU-Lx4">
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="467.33333333333331"/>
                                                 <locale key="locale" localeIdentifier="ru"/>
+                                                <connections>
+                                                    <action selector="datePicker:" destination="BYZ-38-t0r" eventType="valueChanged" id="Pou-AD-EqV"/>
+                                                </connections>
                                             </datePicker>
                                         </subviews>
                                     </stackView>
@@ -86,6 +89,9 @@
                                                         <integer key="value" value="15"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="resultButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EaP-36-hHC"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -101,6 +107,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pvn-kz-qK1" secondAttribute="bottom" id="um7-7t-tpb"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="resultNumberLabel" destination="Mqj-DM-qCq" id="VVZ-uo-JpS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
