@@ -7,36 +7,42 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-    
-    @IBOutlet var datePicker: UIDatePicker!
-    @IBOutlet var resultNumberLabel: UILabel!
+
+final class ViewController: UIViewController {
+
+    // MARK: - Outlets
+    @IBOutlet private var resultNumberLabel: UILabel!
+    @IBOutlet private var datePicker: UIDatePicker!
+
+    // MARK: - Private Properties
+    private var numberDays: Int?
+
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Устанавливаем максимальную дату на сегодня
         datePicker.maximumDate = Date()
     }
-    private var numberDays: Int?
-    
-    @IBAction func datePickerChanged(_ sender: UIDatePicker) {
+
+    // MARK: - Actions
+    @IBAction private func datePickerChanged(_ sender: UIDatePicker) {
         let calendar = Calendar.current
         let startDate = sender.date
         let endDate = Date()
+
         let components = calendar.dateComponents([.day], from: startDate, to: endDate)
+
         if let days = components.day {
             numberDays = days
-            
         }
     }
-    
-    
-    @IBAction func resultButtonClicked(_ sender: UIButton) {
+
+    @IBAction private func resultButtonClicked() {
         if let days = numberDays {
             resultNumberLabel.text = "\(days)"
         } else {
-            resultNumberLabel.text = "Выберите дату"
+            resultNumberLabel.text = "Дата?"
         }
     }
-    
-    
 }
-

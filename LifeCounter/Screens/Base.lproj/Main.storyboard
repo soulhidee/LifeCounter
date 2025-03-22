@@ -59,7 +59,7 @@
                                                 <color key="textColor" name="YP Text"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mqj-DM-qCq" userLabel="resultNumber">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mqj-DM-qCq" userLabel="resultNumber">
                                                 <rect key="frame" x="0.0" y="60" width="141.33333333333334" height="60"/>
                                                 <fontDescription key="fontDescription" name="Rubik-Light" family="Rubik" pointSize="52"/>
                                                 <color key="textColor" name="YP Result"/>
@@ -90,7 +90,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="resultButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Afi-ob-clk"/>
+                                                    <action selector="resultButtonClicked" destination="BYZ-38-t0r" eventType="touchUpInside" id="z6o-TH-wBh"/>
                                                 </connections>
                                             </button>
                                         </subviews>
