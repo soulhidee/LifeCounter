@@ -90,7 +90,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="resultButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EaP-36-hHC"/>
+                                                    <action selector="resultButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Afi-ob-clk"/>
                                                 </connections>
                                             </button>
                                         </subviews>
