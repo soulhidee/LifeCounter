@@ -27,7 +27,7 @@ _Добавьте сюда скриншоты вашего приложения,
 1. Склонируйте репозиторий на свой компьютер:
 
    ```bash
-   git clone https://github.com/yourusername/LifeCounter.git
+   git clone https://github.com/soulhidee/LifeCounter.git
    ```
 
 2. Откройте проект в Xcode.
