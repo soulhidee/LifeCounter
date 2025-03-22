@@ -45,7 +45,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="467.33333333333331"/>
                                                 <locale key="locale" localeIdentifier="ru"/>
                                                 <connections>
-                                                    <action selector="datePicker:" destination="BYZ-38-t0r" eventType="valueChanged" id="Pou-AD-EqV"/>
+                                                    <action selector="datePickerChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="KNZ-bv-B0q"/>
                                                 </connections>
                                             </datePicker>
                                         </subviews>
@@ -108,6 +108,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="datePicker" destination="ieR-yU-Lx4" id="kNE-Vk-IYb"/>
                         <outlet property="resultNumberLabel" destination="Mqj-DM-qCq" id="VVZ-uo-JpS"/>
                     </connections>
                 </viewController>
