@@ -20,9 +20,8 @@ final class ViewController: UIViewController {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Устанавливаем максимальную дату на сегодня
         datePicker.maximumDate = Date()
+        datePicker.setValue(UIColor.black, forKey: "textColor")
     }
 
     // MARK: - Actions
